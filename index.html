@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="player1">Player 1</div>
-    <div id="player2">Player 2</div>
-    <button class="btn" value="rock">rock</button>
-    <button class="btn" value="paper">paper</button>
-    <button class="btn" value="scissors">scissors</button>
-    <h2 id="result">Secin</h2>
-    <p id="score">Siz: 0 | Kompüter: 0</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="buttons">
+        <button class="btn" value="rock">rock</button>
+        <button class="btn" value="paper">paper</button>
+        <button class="btn" value="scissors">scissors</button>
+      </div>
+
+      <h2 class="result" id="result">Choose</h2>
+
+      <div class="game-container">
+        <div class="player" id="player1">
+          <span class="player-title">You</span>
+          <img class="choice-image" id="userImage" style="display: none;" alt="" />
+        </div>
+
+        <div class="player" id="player2">
+          <span class="player-title">Computer</span>
+          <img class="choice-image" id="compImage" style="display: none;" alt="" />
+        </div>
+      </div>
+
+      <p class="score" id="score">You: 0 | Computer: 0</p>
+    </main>
+
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
